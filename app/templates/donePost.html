@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+
+<h3><b>{{post.problemName}}</b> </h3>
+
+<h4>
+    <br>
+    Rating: <b> {{post.rating}} </b>
+    <br> <br>
+    Source: <a href=" {{post.problemLink}} ">Link</a>
+    <br><br>
+</h4>
+
+<p>Rated by: <b>{{post.cnt}} users</b></p>
+
+<br>
+<h3> You've already rated this problem. </h3>
+
+{% endblock %}

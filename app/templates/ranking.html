@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+    <h4> <b> Ranking of All Problems: </b></h4>
+    <br> <br>
+
+    <table class="table table-striped">
+
+        <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Problem Name</th>
+              <th scope="col">Rating</th>
+            </tr>
+        </thead>
+
+        {% for i in range(0,lenofpost) %}
+            <tr>
+                <td scope="row"> {{i+1}} </td>
+                <td>
+                    <a href=" problem/{{posts[i].id}} ">
+                        {{posts[i].problemName}}
+                    </a>
+                </td>
+                <td>
+                    {{ posts[i].rating }}
+                </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+
+{% endblock %}
