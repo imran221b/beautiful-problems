@@ -1,4 +1,32 @@
-Beautiful Problems Guidelines
+Beautiful Problems 
+====================
+
+Introduction
+------------
+
+Beautiful problems is a software to rate competitive programming problems.
+
+Live Demo: https://beautiful-problem.herokuapp.com/
+
+Installation
+--------------
+Clone the repository in your working directory.
+
+Change directory to project root:
+
+ `cd beautiful-problems`
+
+Create and activate python virtual env:
+
+    python3.6 -m venv .venv
+    source .venv/bin/activate
+    pip install --upgrade pip
+
+Install requirements with:
+    
+`pip install -r requrements.txt`
+
+Guidelines
 ------------------------------
 Beautiful Problems is a web application for rating competitive programming problems across different platforms.
 There are many platforms out there which have algorithmic problems for problem solvers to solve and practice. 
